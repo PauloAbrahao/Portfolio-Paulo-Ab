@@ -77,10 +77,38 @@
   .experience_content {
     padding: 1rem;
   }
+
+  .experience_frontend {
+    margin: 0;
+  }  
+
+  .experience_backend {
+    margin: auto -4rem;
+  }
 }
 
 /* MEDIA QUERIES FOR SMALL DEVICES */
 
 @media screen and (max-width: 600px) {
+  .experience-container {
+    gap: 1rem;
+  }
 
+  .experience-container > div {
+    width: 100%;
+    padding: 2rem 1rem;
+  }
+
+  .experience_content {
+    padding: 1rem;
+  }
+
+  .experience_frontend {
+    margin: 0;
+    padding-right: .5rem;
+  }  
+
+  .experience_backend {
+    margin: auto -2rem;
+  }
 }
