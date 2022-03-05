@@ -1,5 +1,5 @@
 .experience-container {
-  display:flex;
+  display: flex;
   height: 100%;
   width: 50%;
   perspective: 1000px;
@@ -7,38 +7,42 @@
 
 .experience-container > div {
   height: 500px;
-  background-color: var(--color-bg-variant);
+  // borderbackground-color: var(--color-bg-variant);
+  background: rgb(67,67,157);
+  background: linear-gradient(0deg, rgba(67,67,157,1) 0%, rgba(44,44,108,1) 100%);
   padding: 2rem 0;
-  border-radius: 2rem;
-  border: 1px solid transparent;
+  border-radius: 1rem;
+  // border: 1px solid transparent;
 }
 
 .flipper {
   position: relative;
   width: 100%;
-	height: 100%;
+  height: 100%;
   transition: transform 1s;
-	transform-style: preserve-3d;
+  transform-style: preserve-3d;
 }
 
 .experience-container:hover .flipper {
-	transform: rotateY(180deg);
+  transform: rotateY(180deg);
 }
 
-.experience_frontend, .experience_backend {
-	position: absolute;
-	width: 100%;
-	height: 100%;
+.experience_frontend,
+.experience_backend {
+  position: absolute;
+  width: 100%;
+  height: 100%;
   backface-visibility: hidden;
   margin: auto 2rem;
 }
 
-.experience_backend{
-	transform: rotateY(180deg);
+.experience_backend {
+  transform: rotateY(180deg);
   margin: auto -2rem;
 }
 
-.experience_frontend h3, .experience_backend h3 {
+.experience_frontend h3,
+.experience_backend h3 {
   margin-right: 3rem;
   text-align: center;
   margin-bottom: 2rem;
@@ -80,7 +84,7 @@
 
   .experience_frontend {
     margin: 0;
-  }  
+  }
 
   .experience_backend {
     margin: auto -4rem;
@@ -89,7 +93,7 @@
 
 /* MEDIA QUERIES FOR SMALL DEVICES */
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
   .experience-container {
     gap: 1rem;
   }
@@ -101,14 +105,25 @@
 
   .experience_content {
     padding: 1rem;
+    row-gap: 1.2rem;
   }
 
   .experience_frontend {
     margin: 0;
-    padding-right: .5rem;
-  }  
+    padding-right: 0.5rem;
+  }
+
+  .experience_frontend h3,
+  .experience_backend h3 {
+    margin-bottom: 0.5rem;
+  }
 
   .experience_backend {
     margin: auto -2rem;
+  }
+
+  .experience_content {
+    display: flex;
+    flex-direction: column;
   }
 }

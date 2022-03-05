@@ -2,7 +2,7 @@ import React from "react";
 import "./about.scss";
 
 import { FaAward } from "react-icons/fa";
-import { BsPeopleFill } from "react-icons/bs";
+import { IoIosSchool } from "react-icons/io";
 import { RiFoldersLine } from "react-icons/ri";
 
 const About = () => {
@@ -39,15 +39,15 @@ const About = () => {
             </article>
 
             <article className="about_card">
-              <BsPeopleFill className="about_icon" />
-              <h5>Clientes</h5>
-              <small>3+ years working</small>
+              <IoIosSchool className="about_icon" />
+              <h5>Cursos</h5>
+              <small>+10 cursos realizados</small>
             </article>
 
             <article className="about_card">
               <RiFoldersLine className="about_icon" />
               <h5>Projetos</h5>
-              <small>3+ years working</small>
+              <small>10+ projetos desenvolvidos</small>
             </article>
           </div>
 
