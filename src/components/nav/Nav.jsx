@@ -12,19 +12,39 @@ const Nav = () => {
 
   return (
     <nav>
-      <a href="#" className={activeNav === "#" ? 'active' : ''} onClick={() => setActiveNav('#')}>
+      <a
+        href="#"
+        className={activeNav === "#" ? "active" : ""}
+        onClick={() => setActiveNav("#")}
+      >
         <IoIosHome />
       </a>
-      <a href="#about" className={activeNav === "#about" ? 'active' : ''} onClick={() => setActiveNav('#about')}>
+      <a
+        href="#about"
+        className={activeNav === "#about" ? "active" : ""}
+        onClick={() => setActiveNav("#about")}
+      >
         <AiOutlineUser />
       </a>
-      <a href="#experience" className={activeNav === "#experience" ? 'active' : ''} onClick={() => setActiveNav('#experience')}>
+      <a
+        href="#experience"
+        className={activeNav === "#experience" ? "active" : ""}
+        onClick={() => setActiveNav("#experience")}
+      >
         <ImStatsBars2 />
       </a>
-      <a href="#services" className={activeNav === "#services" ? 'active' : ''} onClick={() => setActiveNav('#services')}>
+      <a
+        href="#services"
+        className={activeNav === "#services" ? "active" : ""}
+        onClick={() => setActiveNav("#services")}
+      >
         <GiHammerNails />
       </a>
-      <a href="#contact" className={activeNav === "#contact" ? 'active' : ''} onClick={() => setActiveNav('#contact')}>
+      <a
+        href="#contact"
+        className={activeNav === "#contact" ? "active" : ""}
+        onClick={() => setActiveNav("#contact")}
+      >
         <SiGooglemessages />
       </a>
     </nav>
