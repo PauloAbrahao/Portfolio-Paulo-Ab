@@ -6,6 +6,7 @@ import { AiOutlineUser } from "react-icons/ai";
 import { ImStatsBars2 } from "react-icons/im";
 import { GiHammerNails } from "react-icons/gi";
 import { SiGooglemessages } from "react-icons/si";
+import { RiFoldersLine } from "react-icons/ri";
 
 const Nav = () => {
   const [activeNav, setActiveNav] = React.useState("#");
@@ -39,6 +40,14 @@ const Nav = () => {
         onClick={() => setActiveNav("#services")}
       >
         <GiHammerNails />
+      </a>
+
+      <a
+        href="#portfolio"
+        className={activeNav === "#portfolio" ? "active" : ""}
+        onClick={() => setActiveNav("#portfolio")}
+      >
+        <RiFoldersLine />
       </a>
       <a
         href="#contact"

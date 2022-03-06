@@ -3,188 +3,90 @@ import "./portfolio.scss";
 
 import IMG1 from "../../assets/awax.png";
 import IMG2 from "../../assets/dev-finance.png";
-import IMG3 from "../../assets/login-page.png";
-import IMG4 from "../../assets/moveit.png";
-import IMG5 from "../../assets/pre-order.png";
 import IMG6 from "../../assets/starbucks.png";
+import IMG7 from "../../assets/letmeask.png";
+import IMG8 from "../../assets/apae.png";
+import IMG9 from "../../assets/ewesteves.png";
 
 const Portfolio = () => {
+  const data = [
+    {
+      id: 1,
+      image: IMG1,
+      title: "Awax - HTML / CSS",
+      github: "https://github.com/PauloAbrahao/Site-Awax",
+      demo: "https://pauloabrahao.github.io/Site-Awax/",
+    },
+    {
+      id: 3,
+      image: IMG6,
+      title: "StarBucks - HTML / CSS",
+      github: "https://github.com/PauloAbrahao/Projeto-Star-Bucks",
+      demo: "https://pauloabrahao.github.io/Projeto-Star-Bucks/",
+    },
+    {
+      id: 2,
+      image: IMG2,
+      title: "Dev Finance - HTML / CSS / JAVASCRIPT",
+      github: "https://github.com/PauloAbrahao/Dev.finance",
+      demo: "https://pauloabrahao.github.io/Dev.finance/",
+    },
+    {
+      id: 4,
+      image: IMG7,
+      title: "Letmeask - ReactJs, TypeScript, Firebase",
+      github: "https://github.com/PauloAbrahao/Letmeask",
+      demo: "",
+    },
+    {
+      id: 5,
+      image: IMG8,
+      title: "APAE Altinópolis - Wordpress",
+      github: "",
+      demo: "https://apaealtinopolis.com.br",
+    },
+    {
+      id: 6,
+      image: IMG9,
+      title: "ewesteves - Wordpress",
+      github: "",
+      demo: "https://ewesteves.com.br/",
+    },
+  ];
+
   return (
     <section id="portfolio">
       <h5>Meus</h5>
       <h2>Projetos</h2>
 
       <div className="container portfolio_container">
-        <article className="portfolio_item">
-          <div className="portfolio_item-image">
-            <img src={IMG1} alt="" />
-          </div>
-          <h3>This is a portfolio item title</h3>
-          <div className="portfolio_item-cta">
-            <a href="" className="btn">
-              Github
-            </a>
-            <a href="" className="btn btn-primary" target="_blank">
-              Demo
-            </a>
-          </div>
-        </article>
+        {data.map(({ id, image, title, github, demo }) => {
+          return (
+            <article className="portfolio_item" key={id}>
+              <div className="portfolio_item-image">
+                <img src={image} alt={title} />
+              </div>
+              <h3>{title}</h3>
+              <div className="portfolio_item-cta">
+                {github ? (
+                  <a href={github} className="btn" target="_blank">
+                    Github
+                  </a>
+                ) : (
+                  ""
+                )}
 
-        <article className="portfolio_item">
-          <div className="portfolio_item-image">
-            <img src={IMG2} alt="" />
-          </div>
-          <h3>This is a portfolio item title</h3>
-          <div className="portfolio_item-cta">
-            <a href="" className="btn">
-              Github
-            </a>
-            <a href="" className="btn btn-primary" target="_blank">
-              Demo
-            </a>
-          </div>
-        </article>
-
-        <article className="portfolio_item">
-          <div className="portfolio_item-image">
-            <img src={IMG3} alt="" />
-          </div>
-          <h3>This is a portfolio item title</h3>
-          <div className="portfolio_item-cta">
-            <a href="" className="btn">
-              Github
-            </a>
-            <a href="" className="btn btn-primary" target="_blank">
-              Demo
-            </a>
-          </div>
-        </article>
-
-        <article className="portfolio_item">
-          <div className="portfolio_item-image">
-            <img src={IMG4} alt="" />
-          </div>
-          <h3>This is a portfolio item title</h3>
-          <div className="portfolio_item-cta">
-            <a href="" className="btn">
-              Github
-            </a>
-            <a href="" className="btn btn-primary" target="_blank">
-              Demo
-            </a>
-          </div>
-        </article>
-
-        <article className="portfolio_item">
-          <div className="portfolio_item-image">
-            <img src={IMG5} alt="" />
-          </div>
-          <h3>This is a portfolio item title</h3>
-          <div className="portfolio_item-cta">
-            <a href="" className="btn">
-              Github
-            </a>
-            <a href="" className="btn btn-primary" target="_blank">
-              Demo
-            </a>
-          </div>
-        </article>
-
-        <article className="portfolio_item">
-          <div className="portfolio_item-image">
-            <img src={IMG6} alt="" />
-          </div>
-          <h3>This is a portfolio item title</h3>
-          <div className="portfolio_item-cta">
-            <a href="" className="btn">
-              Github
-            </a>
-            <a href="" className="btn btn-primary" target="_blank">
-              Demo
-            </a>
-          </div>
-        </article>
-        {/* <div id="home-magicwall" class="fake-magicwall">
-                <ul>
-                    <li>
-                        <div class="magic-wall_item lazyload">
-                            <img src="" alt="image" />
-                            <div class="hover-content"></div>
-                            <a href="#" class="colorbox"></a>
-                        </div>
-                    </li>
-            
-                    <li>
-                        <div class="magic-wall_item lazyload">
-                            <img src="" alt="image" />
-                            <div class="hover-content"></div>
-                            <a href="#" class="colorbox"></a>
-                        </div>
-                    </li>
-          
-                    <li>
-                        <div class="magic-wall_item lazyload">
-                            <img src="" alt="image" />
-                            <div class="hover-content"></div>
-                            <a href="#" class="colorbox"></a>
-                        </div>
-                    </li>
-                  
-                    <li>
-                        <div class="magic-wall_item lazyload">
-                            <img src="" alt="image" />
-                            <div class="hover-content"></div>
-                            <a href="#" class="colorbox"></a>
-                        </div>
-                    </li>
-                  
-                    <li>
-                        <div class="magic-wall_item lazyload">
-                            <img src="" alt="image" />
-                            <div class="hover-content"></div>
-                            <a href="#" class="colorbox"></a>
-                        </div>
-                    </li>
-                    
-                    <li>
-                        <div class="magic-wall_item lazyload">
-                            <img src="" alt="image" />
-                            <div class="hover-content"></div>
-                            <a href="#" class="colorbox"></a>
-                        </div>
-                    </li>
-                
-                    <li>
-                        <div class="magic-wall_item lazyload">
-                            <img src="" alt="image" />
-                            <div class="hover-content"></div>
-                            <a href="#" class="colorbox"></a>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="magic-wall_item lazyload">
-                            <img src="" alt="image" />
-                            <div class="hover-content"></div>
-                            <a href="#" class="colorbox"></a>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="magic-wall_item lazyload">
-                            <img src="" alt="image" />
-                            <div class="hover-content"></div>
-                            <a href="#" class="colorbox"></a>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="magic-wall_item lazyload">
-                            <img src="" alt="image" />
-                            <div class="hover-content"></div>
-                            <a href="#" class="colorbox"></a>
-                        </div>
-                    </li>
-                    
-                </ul>
-            </div> */}
+                {demo ? (
+                  <a href={demo} className="btn btn-primary" target="_blank">
+                    Site
+                  </a>
+                ) : (
+                  ""
+                )}
+              </div>
+            </article>
+          );
+        })}
       </div>
     </section>
   );
