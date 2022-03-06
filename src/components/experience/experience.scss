@@ -6,7 +6,7 @@
 }
 
 .experience-container > div {
-  height: 500px;
+  height: 400px;
   // borderbackground-color: var(--color-bg-variant);
   background: rgb(67,67,157);
   background: linear-gradient(0deg, rgba(67,67,157,1) 0%, rgba(44,44,108,1) 100%);
@@ -34,6 +34,11 @@
   height: 100%;
   backface-visibility: hidden;
   margin: auto 2rem;
+}
+
+.experience_frontend > div,
+.experience_backend > div {
+  margin-left: 5rem;
 }
 
 .experience_backend {
@@ -73,6 +78,7 @@
   }
 
   .experience-container > div {
+    height: 500px;
     width: 80%;
     padding: 2rem;
     margin: 0 auto;
@@ -88,6 +94,11 @@
 
   .experience_backend {
     margin: auto -4rem;
+  }
+
+  .experience_frontend > div,
+  .experience_backend > div {
+    margin-left: 0;
   }
 }
 
@@ -125,5 +136,10 @@
   .experience_content {
     display: flex;
     flex-direction: column;
+  }
+
+  .experience_frontend > div,
+  .experience_backend > div {
+    margin-left: 0;
   }
 }

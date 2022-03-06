@@ -8,6 +8,7 @@ import Typewriter from "typewriter-effect";
 import profile from "../../assets/profile.png";
 
 const Header = () => {
+
   return (
     <header>
       <div className="container header_container">
@@ -15,8 +16,8 @@ const Header = () => {
           <img src={profile} alt="Foto do Paulo Abrahão" />
         </div>
 
-        <h5>Olá, eu sou</h5>
-        <h1>Paulo Abrahão</h1>
+        <h3>Olá, eu sou</h3>
+        <h2>Paulo Abrahão</h2>
 
         <Typewriter
           options={{
