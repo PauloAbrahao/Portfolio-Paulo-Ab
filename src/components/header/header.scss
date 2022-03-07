@@ -10,6 +10,12 @@ header {
   }  
 }
 
+#tsparticles{
+  position: absolute;
+  height: inherit;
+  width: inheri;
+}
+
 .cta {
   margin-top: 2.5rem;
   display: flex;
@@ -56,8 +62,9 @@ header {
 @media screen and (max-width: 1024px) {
   .header { 
     height: 68vh;
-
   }
+
+
 }
 
 /* MEDIA QUERIES FOR SMALL DEVICES */
