@@ -11,7 +11,6 @@
   border-radius: 2rem;
   border: 1px solid transparent;
   transition: var(--transition);
-  box-shadow: 4px 5px 10px #0000001c;
 }
 
 .portfolio_item:hover {
@@ -25,16 +24,20 @@
 }
 
 .portfolio_item h3 {
-  margin: 1.2rem 0 2rem;
+  margin-top: 1.2rem;
+}
+
+.portfolio_item small {
+  font-size: .7rem;
 }
 
 .portfolio_item-cta {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   gap: 1rem;
+  margin-top: 1rem;
   margin-bottom: 1rem;
 }
-
 
 /* MEDIA QUERIES FOR MEDIUM DEVICES */
 

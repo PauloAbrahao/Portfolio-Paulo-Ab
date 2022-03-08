@@ -51,7 +51,7 @@ const Header = () => {
                 quantity: 4,
               },
               repulse: {
-                distance: 70,
+                distance: 90,
                 duration: 0.4,
               },
             },
@@ -76,7 +76,7 @@ const Header = () => {
               enable: true,
               outMode: "bounce",
               random: false,
-              speed: 7,
+              speed: 3,
               straight: false,
             },
             number: {

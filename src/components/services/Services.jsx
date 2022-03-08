@@ -22,7 +22,9 @@ const Services = () => {
             </li>{" "}
             <li>
               <BsPatchCheckFill className="service_list-icon" />
-              <p>Criação do protótipo do site a partir de conceitos de UX e UI.</p>
+              <p>
+                Criação do protótipo do site a partir de conceitos de UX e UI.
+              </p>
             </li>{" "}
             <li>
               <BsPatchCheckFill className="service_list-icon" />
