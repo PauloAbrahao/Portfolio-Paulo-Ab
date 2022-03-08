@@ -2,7 +2,7 @@ $(document).ready(function () {
   if (
     !$("#myCanvas").tagcanvas(
       {
-        textColour: "#4db5ff",
+        textColour: "#64ffda",
         outlineColour: "transparent",
         reverse: true,
         depth: 0.8,

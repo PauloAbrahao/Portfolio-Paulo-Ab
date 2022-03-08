@@ -21,11 +21,9 @@
 }
 
 .about_card {
-  //background: var(--color-bg-variant);
-  background: rgb(44,44,84);
-  background: linear-gradient(0deg, rgba(44,44,84,1) 0%, rgba(53,53,123,1) 30%, rgba(44,44,108,1) 57%, rgba(44,44,108,1) 100%);
+  background-color: var(--color-bg-variant);
   border: 1px solid transparent;
-  border-radius: 1rem;
+  border-radius: .5rem;
   padding: 2rem;
   text-align: center;
   transition: var(--transition);

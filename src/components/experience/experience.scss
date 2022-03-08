@@ -7,12 +7,9 @@
 
 .experience-container > div {
   height: 400px;
-  // borderbackground-color: var(--color-bg-variant);
-  background: rgb(67,67,157);
-  background: linear-gradient(0deg, rgba(67,67,157,1) 0%, rgba(44,44,108,1) 100%);
+  background-color: var(--color-bg-variant);
   padding: 2rem 0;
-  border-radius: 1rem;
-  // border: 1px solid transparent;
+  border-radius: .5rem;
 }
 
 .flipper {

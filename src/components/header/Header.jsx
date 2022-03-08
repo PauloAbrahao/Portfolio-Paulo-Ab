@@ -100,15 +100,16 @@ const Header = () => {
           detectRetina: true,
         }}
       />
+
       <div className="container header_container">
         <div className="me">
           <img src={profile} alt="Foto do Paulo Abrahão" />
         </div>
 
-        <h3>Olá, eu sou</h3>
-        <h2>Paulo Abrahão</h2>
+        <h2>Olá, eu sou</h2>
+        <h3>Paulo Abrahão</h3>
 
-        <Typewriter
+        <Typewriter 
           options={{
             strings: ["Desenvolvedor", "Freelancer", "Designer"],
             autoStart: true,

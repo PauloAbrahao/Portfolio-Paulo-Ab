@@ -5,10 +5,9 @@
 }
 
 .portfolio_item {
-  background: rgb(44,44,84);
-  background: linear-gradient(0deg, rgba(44,44,84,1) 0%, rgba(53,53,123,1) 30%, rgba(44,44,108,1) 57%, rgba(44,44,108,1) 100%);
+  background-color: var(--color-bg-variant);
   padding: 1.3rem;
-  border-radius: 2rem;
+  border-radius: .5rem;
   border: 1px solid transparent;
   transition: var(--transition);
 }
@@ -19,7 +18,7 @@
 }
 
 .portfolio_item-image {
-  border-radius: 1.5rem;
+  border-radius: .5rem;
   overflow: hidden;
 }
 
@@ -29,6 +28,7 @@
 
 .portfolio_item small {
   font-size: .7rem;
+  color: var(--color-light);
 }
 
 .portfolio_item-cta {
