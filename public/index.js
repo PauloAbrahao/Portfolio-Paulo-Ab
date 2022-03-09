@@ -11,7 +11,6 @@ $(document).ready(function () {
         freezeDecel: true,
         initial: [0.2, -0.4],
         clickToFront: true,
-
       },
       "tags"
     )
@@ -20,4 +19,3 @@ $(document).ready(function () {
     $("#myCanvasContainer");
   }
 });
-

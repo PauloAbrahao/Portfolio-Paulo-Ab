@@ -18,6 +18,7 @@ const Header = () => {
 
   return (
     <header>
+      
       <Particles
         id="tsparticles"
         init={particlesInit}
@@ -59,10 +60,10 @@ const Header = () => {
           particles: {
             color: {
               opacity: 0,
-              value: "#ffffff",
+              value: "#00ffc328",
             },
             links: {
-              color: "#4db5ff",
+              color: "#64ffda",
               distance: 120,
               enable: true,
               opacity: 0.18,
@@ -109,15 +110,17 @@ const Header = () => {
         <h2>Olá, eu sou</h2>
         <h3>Paulo Abrahão</h3>
 
-        <Typewriter 
-          options={{
-            strings: ["Desenvolvedor", "Freelancer", "Designer"],
-            autoStart: true,
-            loop: true,
-          }}
-        />
+        <h4 className="text-light">
+          <Typewriter
+            options={{
+              strings: ["Desenvolvedor", "Freelancer", "Designer"],
+              autoStart: true,
+              loop: true,
+            }}
+          />
+        </h4>
 
-        {/* <h5 className="text-light"></h5> */}
+        {/* <h5 className="text-light">teste</h5> */}
 
         <CTA />
         <HeaderSocials />
