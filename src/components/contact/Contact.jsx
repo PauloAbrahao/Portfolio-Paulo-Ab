@@ -1,46 +1,35 @@
 import React from "react";
+import emailjs from '@emailjs/browser';
+
+import SlideContact from '../SlideContact/SlideContact'
+
 import "./contact.scss";
 
-import { FiLinkedin } from "react-icons/fi";
-import { FiGithub } from "react-icons/fi";
-import { FiTwitter } from "react-icons/fi";
-import { AiOutlineMail } from "react-icons/ai";
 
 const Contact = () => {
-  const data = [
-    {
-      id: 1,
-      type: "Email",
-      social: "ab.cod@outlook.com",
-      icon: <AiOutlineMail className="contact_option-icon"/>,
-      link: `mailto:ab.cod@outlook.com`,
-      message: "Fale comigo!"
-    },
-    {
-      id: 2,
-      type: "LinkedIn",
-      social: "paulo-abrahão",
-      icon: <FiLinkedin className="contact_option-icon"/>,
-      link: "https://www.linkedin.com/in/paulo-abrah%C3%A3o/",
-      message: "Conheça meu perfil"
-    },
-    {
-      id: 3,
-      type: "GitHub",
-      social: "PauloAbrahao",
-      icon: <FiGithub className="contact_option-icon"/>,
-      link: "https://github.com/PauloAbrahao",
-      message: "Conheça meus projetos"
-    },
-    {
-      id: 4,
-      type: "Twitter",
-      social: "Paulo_abh",
-      icon: <FiTwitter className="contact_option-icon" />,
-      link: "https://twitter.com/Paulo_abh",
-      message: "Siga-me no Twitter"
-    },
-  ];
+
+  const [button, setButton] = React.useState('Enviar');
+  const [stateButton, setStateButton] = React.useState(true);
+
+  // HANDLE EMAIL
+
+  const form = React.useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm('service_wkxuaeo', 'template_uu3to7o', form.current, 'us18y3zU0wtYjGDvM')
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
+    
+    form.current.reset();
+    setButton("Enviado!")
+    setStateButton(false)
+    
+  };
 
   return (
     <section id="contact">
@@ -48,24 +37,19 @@ const Contact = () => {
       <h2>Contato</h2>
 
       <div className="container contact_container">
-        <div className="contact_options">
-          {data.map(({ id, type, social, icon, link, message }) => {
-            return (
-              <article className="contact_option" key={id}>
-                {icon}
-                <h4>{type}</h4>
-                <h5>{social}</h5>
-                <a href={link} target="_blank">{message}</a>
-              </article>
-            );
-          })}
-        </div>
+        <SlideContact className="slide"/>
 
-        <form action="">
+        <form ref={form} onSubmit={sendEmail}>
           <input type="text" name='name' placeholder="Nome completo" required />
           <input type="email" name='email' placeholder="E-mail" required />
           <textarea name="message" rows="10"></textarea>
-          <button type="submit" className='btn btn-primary sub-button'>Enviar</button>
+          
+          <button type="submit"
+            className={`btn btn-primary sub-button ${!stateButton ? 'disabled' : ''}`}
+            disabled={!stateButton}
+          >
+            {button}
+          </button>
         </form>
       </div>
     </section>
