@@ -13,7 +13,6 @@
   padding-right: 1rem;
 }
 
-
 .about_cards {
   display:grid;
   grid-template-columns: repeat(3, 1fr);
@@ -33,7 +32,7 @@
 
 .about_card:hover {
   background: transparent;
-  border-color: var(--color-primary-variant);
+  border-color: var(--color-primary);
   cursor: default;
 }
 
