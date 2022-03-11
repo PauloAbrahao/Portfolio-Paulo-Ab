@@ -1,10 +1,11 @@
 import React from "react";
 import "./loading.scss";
 
+//npm i react-loading para funcionar
+
 import ReactLoading from "react-loading";
 
 const Loading = () => {
-
   return (
     <section id="load">
       <ReactLoading

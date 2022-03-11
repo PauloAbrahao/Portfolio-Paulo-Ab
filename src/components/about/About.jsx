@@ -5,8 +5,6 @@ import { FaAward } from "react-icons/fa";
 import { IoIosSchool } from "react-icons/io";
 import { RiFoldersLine } from "react-icons/ri";
 
-// import './scrollAnimation.js'
-
 import FadeInSection from '../scroll/FadeInSection'
 
 const About = () => {

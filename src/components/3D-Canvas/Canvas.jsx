@@ -5,8 +5,8 @@ const Canvas = () => {
   return (
     <div className="skills-charts">
       <div id="myCanvasContainer">
-       <canvas width="600" height="500" id="myCanvas">
-          <ul id="tags" >
+        <canvas width="600" height="500" id="myCanvas">
+          <ul id="tags">
             <li>
               <a href="#">UX</a>
             </li>
@@ -53,8 +53,7 @@ const Canvas = () => {
               <a href="#">AUTOMAÇÃO</a>
             </li>
           </ul>
-        </canvas> 
-      
+        </canvas>
       </div>
     </div>
   );

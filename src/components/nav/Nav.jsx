@@ -3,7 +3,6 @@ import "./nav.scss";
 
 import { IoIosHome } from "react-icons/io";
 import { AiOutlineUser } from "react-icons/ai";
-import { ImStatsBars2 } from "react-icons/im";
 import { GiHammerNails } from "react-icons/gi";
 import { SiGooglemessages } from "react-icons/si";
 import { RiFoldersLine } from "react-icons/ri";
@@ -27,13 +26,7 @@ const Nav = () => {
       >
         <AiOutlineUser />
       </a>
-      <a
-        href="#experience"
-        className={activeNav === "#experience" ? "active" : ""}
-        onClick={() => setActiveNav("#experience")}
-      >
-        <ImStatsBars2 />
-      </a>
+
       <a
         href="#services"
         className={activeNav === "#services" ? "active" : ""}

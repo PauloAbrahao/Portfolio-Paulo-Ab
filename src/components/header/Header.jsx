@@ -18,7 +18,6 @@ const Header = () => {
 
   return (
     <header>
-      
       <Particles
         id="tsparticles"
         init={particlesInit}
@@ -104,7 +103,7 @@ const Header = () => {
 
       <div className="container header_container">
         <div className="me">
-          <img src={profile} alt="Foto do Paulo Abrahão" />
+          <img src={profile} alt="Foto do Paulo Abrahão" loading="lazy"/>
         </div>
 
         <h2>Olá, eu sou</h2>
@@ -119,8 +118,6 @@ const Header = () => {
             }}
           />
         </h4>
-
-        {/* <h5 className="text-light">teste</h5> */}
 
         <CTA />
         <HeaderSocials />

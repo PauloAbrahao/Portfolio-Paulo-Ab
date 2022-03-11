@@ -36,7 +36,6 @@ input, textarea {
 
 @media screen and (max-width: 1024px) {
   .container.contact_container {
-    // grid-template-columns: 1fr;
     width: 65%;
     display: flex;
     flex: 1;
@@ -57,7 +56,6 @@ input, textarea {
 
 @media screen and (max-width: 600px) {
   .container.contact_container {
-    // grid-template-columns: 1fr;
     width: var(--container-width-sm);
     display: flex;
     flex: 1;

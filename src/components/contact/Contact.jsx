@@ -5,7 +5,6 @@ import SlideContact from '../SlideContact/SlideContact'
 
 import "./contact.scss";
 
-
 const Contact = () => {
 
   const [button, setButton] = React.useState('Enviar');
@@ -28,7 +27,6 @@ const Contact = () => {
     form.current.reset();
     setButton("Enviado!")
     setStateButton(false)
-    
   };
 
   return (
@@ -42,11 +40,11 @@ const Contact = () => {
         <form ref={form} onSubmit={sendEmail}>
           <input type="text" name='name' placeholder="Nome completo" required />
           <input type="email" name='email' placeholder="E-mail" required />
-          <textarea name="message" rows="10"></textarea>
+          <textarea name="message" rows="10" placeholder="Escreva sua mensagem..."></textarea>
           
           <button type="submit"
             className={`btn btn-primary sub-button ${!stateButton ? 'disabled' : ''}`}
-            disabled={!stateButton}
+            // disabled={!stateButton}
           >
             {button}
           </button>
