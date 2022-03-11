@@ -23,7 +23,7 @@ const Header = () => {
         init={particlesInit}
         loaded={particlesLoaded}
         options={{
-          fpsLimit: 120,
+          fpsLimit: 60,
           fullScreen: {
             enable: false,
             zIndex: -1000,
@@ -32,7 +32,7 @@ const Header = () => {
             events: {
               onClick: {
                 enable: true,
-                mode: "push",
+                mode: ["push", 'remove'],
               },
               onHover: {
                 enable: true,
@@ -48,6 +48,9 @@ const Header = () => {
                 size: 40,
               },
               push: {
+                quantity: 4,
+              },
+              remove: {
                 quantity: 4,
               },
               repulse: {
@@ -84,7 +87,7 @@ const Header = () => {
                 enable: true,
                 area: 800,
               },
-              value: 100,
+              value: 80,
             },
             opacity: {
               value: 0.1,
