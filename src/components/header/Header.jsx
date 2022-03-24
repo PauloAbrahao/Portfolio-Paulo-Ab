@@ -23,15 +23,15 @@ const Header = () => {
         init={particlesInit}
         loaded={particlesLoaded}
         options={{
-          fpsLimit: 60,
+          fpsLimit: 30,
           fullScreen: {
             enable: false,
-            zIndex: -1000,
+            zIndex: -100,
           },
           interactivity: {
             events: {
               onClick: {
-                enable: true,
+                enable: false,
                 mode: ["push", 'remove'],
               },
               onHover: {
