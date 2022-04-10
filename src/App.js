@@ -1,7 +1,9 @@
 import React from "react";
+// const Header = React.lazy(() => import("./components/header/Header"));
 import About from "./components/about/About";
 import Contact from "./components/contact/Contact";
 import Experience from "./components/experience/Experience";
+// import Loading from "./components/loading/Loading";
 import Footer from "./components/footer/Footer";
 import Header from "./components/header/Header";
 import Nav from "./components/nav/Nav";
@@ -9,7 +11,6 @@ import Portfolio from "./components/portfolio/Portfolio";
 import Services from "./components/services/Services";
 
 function App() {
-
   return (
     <>
       <Header />

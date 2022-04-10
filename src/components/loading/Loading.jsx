@@ -3,18 +3,18 @@ import "./loading.scss";
 
 //npm i react-loading para funcionar
 
-import ReactLoading from "react-loading";
+// import ReactLoading from "react-loading";
 
 const Loading = () => {
   return (
     <section id="load">
-      <ReactLoading
+      {/* <ReactLoading
         className="loading"
         type="spinningBubbles"
         color="#64ffda"
         width="90px"
         height="90px"
-      />
+      /> */}
     </section>
   );
 };

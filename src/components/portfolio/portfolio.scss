@@ -50,6 +50,23 @@
   align-items: center;
 }
 
+.show-more {
+  width: 100%;
+  margin-top: 2.5rem;
+
+}
+
+.show {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  cursor: pointer;
+
+  margin: auto;
+  width: max-content;
+}
+
 /* MEDIA QUERIES FOR MEDIUM DEVICES */
 
 @media screen and (max-width: 1024px) {
