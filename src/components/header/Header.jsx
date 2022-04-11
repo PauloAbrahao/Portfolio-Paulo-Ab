@@ -23,10 +23,10 @@ const Header = () => {
         init={particlesInit}
         loaded={particlesLoaded}
         options={{
-          fpsLimit: 30,
+          fpsLimit: 60,
           fullScreen: {
             enable: false,
-            zIndex: -100,
+            zIndex: -1000,
           },
           interactivity: {
             events: {
@@ -54,7 +54,7 @@ const Header = () => {
                 quantity: 4,
               },
               repulse: {
-                distance: 90,
+                distance: 50,
                 duration: 0.4,
               },
             },
@@ -79,7 +79,7 @@ const Header = () => {
               enable: true,
               outMode: "bounce",
               random: false,
-              speed: 3,
+              speed: 2,
               straight: false,
             },
             number: {
@@ -87,7 +87,7 @@ const Header = () => {
                 enable: true,
                 area: 800,
               },
-              value: 80,
+              value: 70,
             },
             opacity: {
               value: 0.1,
