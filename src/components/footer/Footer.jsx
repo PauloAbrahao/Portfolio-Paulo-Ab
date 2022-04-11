@@ -12,7 +12,7 @@ const Footer = () => {
         PauloAbh
       </a>
 
-      <ul className="permalinks">
+      {/* <ul className="permalinks">
         <li>
           <a href="#">Home</a>
         </li>
@@ -31,7 +31,7 @@ const Footer = () => {
         <li>
           <a href="#contact">Contato</a>
         </li>
-      </ul>
+      </ul> */}
 
       <div className="footer_socials">
         <a href="https://www.linkedin.com/in/paulo-abrah%C3%A3o/" target="_blank">

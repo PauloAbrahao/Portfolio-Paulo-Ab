@@ -53,6 +53,7 @@ const Experience = () => {
                   <small className="text-light">Experiente</small>
                 </div>
               </article>
+              
             </div>
           </div>
 

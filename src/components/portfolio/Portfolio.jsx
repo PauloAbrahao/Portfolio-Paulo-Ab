@@ -64,7 +64,7 @@ const Portfolio = () => {
       id: 6,
       image: IMG7,
       title: "Letmeask - Rocketseat",
-      description: "ReactJs, TypeScript, Firebase",
+      description: "ReactJs / TypeScript / Firebase",
       github: "https://github.com/PauloAbrahao/Letmeask",
       demo: "",
     },
@@ -127,7 +127,7 @@ const Portfolio = () => {
         </div>
 
         <div className="show-more">
-          <a className="show" onClick={handleClick}>
+          <a className="btn show" onClick={handleClick}>
             {TextShow}
             {showMore ? (
               <MdOutlineKeyboardArrowUp />
