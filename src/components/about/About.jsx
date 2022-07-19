@@ -17,19 +17,15 @@ const About = () => {
         <FadeInSection>
           <div className="about_me">
             <p>
-              Olá, seja bem-vindo(a)!👋🏻 <br />
+              👨‍💻 Olá, seja bem-vindo(a)!👋🏻 <br />
               Meu nome é Paulo Abrahão, tenho 20 anos e sou estudante de
               Sistemas de Informação na UEMG - Passos. Atualmente, em 2022, me
-              encontro no 2° ano da faculdade. Durante o ano de 2020 iniciei
-              meus estudos em programação, buscando aprender Desenvolvimento
-              Web. Hoje, após dois anos de estudo nessa área sou capaz de
-              produzir sites com layouts responsivos, além de ter conhecimento
-              em APIs e nos mais diversos Frameworks e Libraries. Além do
-              Front-End, também me interesso por Back-end e mobile. Buscando
-              aprender mais, fiz vários cursos e participei de muitos eventos
-              online, como: B7 Web, RocketSeat, CodeCademy, Origamid, Curso em
-              Vídeo, Next Level Week, Maratona Discover, 3° Imersão Dados da
-              Alura e muitos outros.
+              encontro no 3° ano da faculdade. <br />
+              Durante o ano de 2020 iniciei meus estudos em programação, buscando aprender Desenvolvimento Web. <br />
+              Hoje, após dois anos de bastante estudo e prática nessa área sou capaz de construir sites com layouts responsivos, além de ter conhecimento em APIs e no framework ReactJs (no qual esse site foi construído). Apesar de gostar mais de front-end também me interesso por mobile e back-end. <br /> 
+              Inclusive tenho muita experiência em desenvolver sites com wordpress. <br />
+              Veja meu <a href="#portfolio">portfólio</a> .
+              
             </p>
           </div>
         </FadeInSection>

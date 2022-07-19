@@ -3,11 +3,12 @@ import "./portfolio.scss";
 
 import IMG1 from "../../assets/dogs.png";
 import IMG2 from "../../assets/dev-finance.png";
+import IMG3 from "../../assets/magic-match.png";
+import IMG4 from "../../assets/we-house.png";
 import IMG6 from "../../assets/starbucks.png";
 import IMG7 from "../../assets/letmeask.png";
 import IMG8 from "../../assets/apae.png";
 import IMG9 from "../../assets/ewesteves.png";
-import IMG3 from "../../assets/magic-match.png";
 
 import { MdOutlineKeyboardArrowDown } from "react-icons/md";
 import { MdOutlineKeyboardArrowUp } from "react-icons/md";
@@ -29,14 +30,22 @@ const Portfolio = () => {
     },
     {
       id: 2,
+      image: IMG4,
+      title: "we house",
+      description: "Wordpress",
+      github: "",
+      demo: "https://wehouse.imb.br/",
+    },
+    {
+      id: 3,
       image: IMG9,
-      title: "ewesteves",
+      title: "ew esteves",
       description: "Wordpress",
       github: "",
       demo: "https://ewesteves.com.br/",
     },
     {
-      id: 3,
+      id: 4,
       image: IMG1,
       title: "Dogs App - Origamid",
       description: "ReactJs / CSS",
@@ -45,7 +54,7 @@ const Portfolio = () => {
       demo: "",
     },
     {
-      id: 4,
+      id: 5,
       image: IMG6,
       title: "StarBucks - B7 Web",
       description: "HTML / CSS",
@@ -53,7 +62,7 @@ const Portfolio = () => {
       demo: "https://pauloabrahao.github.io/Projeto-Star-Bucks/",
     },
     {
-      id: 5,
+      id: 6,
       image: IMG2,
       title: "Dev Finance - Rocketseat",
       description: "HTML / CSS / Javascript",
@@ -61,7 +70,7 @@ const Portfolio = () => {
       demo: "https://pauloabrahao.github.io/Dev.finance/",
     },
     {
-      id: 6,
+      id: 7,
       image: IMG7,
       title: "Letmeask - Rocketseat",
       description: "ReactJs / TypeScript / Firebase",
@@ -69,7 +78,7 @@ const Portfolio = () => {
       demo: "",
     },
     {
-      id: 7,
+      id: 8,
       image: IMG3,
       title: "Memory Game - Net Ninja",
       description: "ReactJs / CSS",
